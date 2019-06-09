@@ -1,2 +1,3 @@
 # utilities.js
-Utility Functions
+
+A collection of functions for personal use.
