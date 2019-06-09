@@ -6,6 +6,6 @@ compound = function(rate, duration, seed) {
   for (var i = 0; i < d; i++) {
     a = a * (1 + r)
   }
-  if (seed) { return {value:seed * a, rate:rate, duration:duration, seed:seed, factor:a} }
+  if (seed) { return {value:seed * a, annualised:a, rate:rate, duration:duration, seed:seed} }
   return a
 }
