@@ -16,3 +16,12 @@ compound = function(rate, duration, seed) {
     return {value:seed * a, output:a, annualised:z, rate:rate, duration:duration, seed:seed} }
   return a
 }
+
+decompound = function(annualised, duration, seed) {
+  var a = 1
+  var r = annualised || 3
+  var d = duration   || 365
+  
+  a = Math.pow(10, Math.log(1 + r) / d)
+  return a
+}
